@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        // Lukras
         // El alfredo w
         ID = findViewById(R.id.txtID);
         Nickname = findViewById(R.id.txtNickname);
