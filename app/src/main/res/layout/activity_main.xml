@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="381dp"
+        android:layout_height="645dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvBuscarPorID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingrese el ID del usuario a agregar:"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/txtID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese el ID del usuario..."
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/tvIngresoNickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingrese su apodo para el juego:"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/txtNickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese su apodo..."
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/tvCampeonAEscoger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingrese su campeón a elección:"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/txtCampeon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ingrese a su campeón..."
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/tvRolAIngresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingrese su rol dentro del juego:"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/spinnerRol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvDivisionEscogida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingrese su división a participar:"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/spinnerDivision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/teal_200"
+                android:onClick="RegistrarUser"
+                android:text="Registrar usuario"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/teal_200"
+                android:onClick="BuscarUser"
+                android:text="Buscar usuario"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnActualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/teal_200"
+                android:onClick="ActualizarUsuario"
+                android:text="Actualizar usuario"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnVerUsuarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/teal_200"
+                android:onClick="MostrarUsuariosRegistrados"
+                android:text="Ver usuarios registrados"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvPrecaución"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¡¡¡PRECAUCIÓN!!!"
+                android:textAlignment="center"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/design_default_color_error"
+                android:onClick="BtnEliminarUsuario"
+                android:text="Eliminar usuario"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tvAdvertenciaBorrado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Si hace clic al botón, esta acción no podrá ser revertida. USAR CON PRECAUCIÓN"
+                android:textAlignment="center"
+                android:textColor="@color/design_default_color_error" />
+
+            <TextView
+                android:id="@+id/tvNotaEliminacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* Nota: se eliminará el usuario desde el campo de la búsqueda por ID."
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
