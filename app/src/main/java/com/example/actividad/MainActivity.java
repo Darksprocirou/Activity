@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // El alfredo w
         ID = findViewById(R.id.txtID);
         Nickname = findViewById(R.id.txtNickname);
         Campeon = findViewById(R.id.txtCampeon);
